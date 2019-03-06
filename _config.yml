@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: Leo
+subtitle: 侠心交友， 素心做人
+description: 站在更高的地方，看见更广的世界
+author: 郭君华
+language: zh-Hans
 timezone:
 
 # URL
@@ -72,11 +72,32 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:guojunhua/guojunhua.github.com.git
+  repository: git@kentsun.github.com:guojunhua/guojunhua.github.com.git
 branch: master
+
+# RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# Plugins
+plugins: hexo-generate-feed
+
